@@ -1,0 +1,79 @@
+{
+    "level": {
+        "id":          0,
+        "name":        "gun",
+        "projectiles": 15,
+        "cannon":      {"x": 60,"y": 313 },
+        "entities":    {
+            "collidables": [{
+                "id": 0,
+                "x": 671,
+                "y": 225,
+                "height": 70,
+                "width": 70,
+                "texture": "metal-box",
+                "bounce": 0,
+                "mass": 90,
+                "friction": 1,
+                "shape": "square"
+            },{
+                "id": 1,
+                "x": 489,
+                "y": 348,
+                "height": 200,
+                "width": 30,
+                "texture": "stone-box",
+                "bounce": 0,
+                "mass": 50,
+                "friction": 1,
+                "shape": "square"
+            },{
+                "id": 2,
+                "x": 890,
+                "y": 260,
+                "height": 200,
+                "width": 100,
+                "texture": "about-nav",
+                "bounce": 0,
+                "mass": 50,
+                "friction": 1,
+                "shape": "square"
+            },{
+                "id": 3,
+                "x": 990,
+                "y": 130,
+                "height": 100,
+                "width": 60,
+                "texture": "title",
+                "bounce": 0,
+                "mass": 50,
+                "friction": 1,
+                "shape": "square"
+            },{
+                "id": 4,
+                "x": 665,
+                "y": 130,
+                "width": 400,
+                "height": 150,
+                "texture": "pixels",
+                "bounce": 0,
+                "mass": 50,
+                "friction": 1,
+                "shape": "square"
+            }],
+            "targets": [{
+                "wx": 480,
+                "wy": 301,
+                "height": 200,
+                "width": 30,
+                "value": 150
+            },{
+                "wx": 483,
+                "wy": 172,
+                "height": 200,
+                "width": 30,
+                "value": 100
+            }]
+        }
+    }
+}

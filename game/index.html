@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angry Pigs</title>
+
+        <meta name="description" content="Angry Pigs">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+
+        <link rel="icon" type="image/ico" href="/common/images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/common/css/style-base.css">
+        <link rel="stylesheet" type="text/css" href="/common/css/style-grid.css">
+        <link rel="stylesheet" type="text/css" href="/common/css/style-menu.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body class="grid-wrapper">
+        <div class="grid-row-top grid-column-full container">
+            <h2 class="item title">Angry Pigs Demo</h2>
+        </div>
+        <nav class="grid-row-head grid-column-full container">
+             <ul class="item menu">
+                <li class="menu-item">Game</li>
+                <li class="menu-item">Debug</li>
+            </ul>
+        </nav>
+
+        <main id="wrapper" class="grid-row-main grid-column-main">
+            <section id="high-scores" class=""></section>
+            <section id="game-screen" class="dom-canvas">
+                <!-- <canvas id="debug-canvas" class="game-size"></canvas> -->
+                <div id="game-area" class="item play-area game-size dom-canvas">
+                    <!-- Content loaded dynamically -->
+                </div>
+            </section>
+
+            <section id="controls-area" class="grid-row-tail grid-column-full container">
+                <div id="launch-btn" class="fire-btn"></div>
+                <form id="debug" class="" style="display: inline-block">
+                    <input id="world-coords" type="text" name="world-coords" value="0,0" /><br />
+                    <label for="mouse-coords">Mouse is at these world coords</label><br />
+                    <input id="mouse-coords" type="text" name="mouse-coords" value="0,0" />
+                </form>
+            </section>
+        </main>
+
+        <section id="splash" class="grid-row-full grid-column-full hide">
+            <h2>Angry Pigs - The Game</h2>
+            <div class="button">Play Now</div>
+        </section>
+
+        <script type="module" src="./main.js"></script>
+</body>
+
+</html>

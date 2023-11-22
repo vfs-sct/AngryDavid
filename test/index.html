@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angry Pigs Server Testbed</title>
+
+        <meta name="description" content="Angry Pigs Server Test">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- This is the key CDN to pull jQuery from -->
+        <!-- To operate offline we may want these to load from a local source -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+        <!-- Local styles -->
+        <style type="text/css">
+        .form-border {
+            border:        1px solid black;
+            border-radius: 3px;
+            margin: 1px;
+        }
+        .form-grid {
+            display:       grid;
+            grid-template-columns: 10em auto;
+            padding:       2px;
+        }
+        .form-label {
+            grid-column:1;
+            text-align: right;
+            padding-right: 4px
+        }
+        .form-field {
+            grid-column:2;
+            padding: 2px 2px 2px 8px;
+        }
+        </style>
+   </head>
+   <body>
+
+        <div id="wrapper">
+            <div id="test-data">
+                <form id="test-level-input" method="post" action="null">
+                    <span>Form to create an object</span><br />
+
+                    <input type="submit">Save Level</input>
+                </form>
+
+                <form id="test-object-input">
+                    <span>Form to create an object</span><br />
+                    <div class="form-border form-grid">
+                        <label class="form-border form-label">
+                        ID:</label>
+                        <input class="form-border form-field" type="text" name="id" value="0" />
+                        <span class="form-border form-label">
+                        Name: </span>
+                        <input class="form-border form-field" type="text" name="name" value="Metal Crate" />
+                        <span class="form-border form-label">
+                        Height: </span>
+                        <input class="form-border form-field" type="number" name="height" value="70" />
+                        <span class="form-border form-label">
+                        Width:</span>
+                        <input class="form-border form-field" type="number" name="width" value="70" />
+                        <span class="form-border form-label">
+                        Texture:</span>
+                        <input class="form-border form-field" type="text" name="texture" value="images/metalCenter.png" />
+                        <span class="form-border form-label">
+                        Mass:</span>
+                        <input class="form-border form-field"  type="number" name="mass" value="90" />
+                        <span class="form-border form-label">
+                        Restitution:</span>
+                        <input class="form-border form-field" type="number" name="restitution" value="0" />
+                        <span class="form-border form-label">
+                        Friction:</span>
+                        <input class="form-border form-field" type="number" name="friction" value="1" />
+                        <span class="form-border form-label">
+                        Shape:</span>
+                        <input class="form-border form-field" type="text" name="shape" value="square" />
+
+                        <input class="form-border form-field" type="submit" name="action" value="Save Object" />
+                    </div>
+                </form>
+
+                <form id="test-level-fetch" method="post" action="null">
+                    <span>Form to create an object</span><br />
+                    <input type="submit">Load</input>
+                </form>
+            </div>
+            <div id="console"></div>
+        </div>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "collidable": [
+      {
+        "-id":"0",
+        "name":"Metal Crate",
+        "height":"70",
+        "width":"70",
+        "texture":"images/metalCenter.png",
+        "mass":"90",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"4"
+      },
+      {
+        "-id":"1",
+        "name":"Stone Wall",
+        "height":"200",
+        "width":"30",
+        "texture":"images/stoneCenter.png",
+        "mass":"50",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"4"
+      },
+      {
+        "-id":"2",
+        "name":"Wooden Crates",
+        "height":"70",
+        "width":"140",
+        "texture":"images/box.png",
+        "mass":"15",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"2"
+      },
+      {
+        "-id":"3",
+        "name":"Ice Block",
+        "height":"200",
+        "width":"70",
+        "texture":"images/iceblock.png",
+        "mass":"36",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"5"
+      },
+      {
+        "-id":"4",
+        "name":"Ice Floor",
+        "height":"70",
+        "width":"200",
+        "texture":"images/iceBlockAlt.png",
+        "mass":"34",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"3"
+      },
+      {
+        "-id":"5",
+        "name":"Floor Crates",
+        "height":"70",
+        "width":"200",
+        "texture":"images/boxAlt.png",
+        "mass":"10",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"2"
+      },
+      {
+        "-id":"6",
+        "name":"Stone Floor",
+        "height":"30",
+        "width":"170",
+        "texture":"images/stoneCenter.png",
+        "mass":"31",
+        "bounce":"0",
+        "friction":"1",
+        "hitPoints":"5"
+      },
+      {
+        "-id":"7",
+        "name":"Slippery Ice",
+        "height":"140",
+        "width":"70",
+        "texture":"images/iceBlockAlt.png",
+        "mass":"16",
+        "bounce":"0",
+        "friction":"0",
+        "hitPoints":"4"
+      },
+      {
+        "-id":"8",
+        "name":"Extra Object",
+        "height":"70",
+        "width":"35",
+        "texture":"images/metalCenter.png",
+        "mass":"30",
+        "bounce":"0",
+        "friction":"0",
+        "hitPoints":"5"
+      },
+      {
+        "-id":"9",
+        "name":"Orillia",
+        "height":"102",
+        "width":"48",
+        "texture":"images/metalCenter.png",
+        "mass":"10",
+        "bounce":"0",
+        "friction":"0",
+        "hitPoints":"8"
+      }
+    ]
+}

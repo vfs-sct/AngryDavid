@@ -1,0 +1,8 @@
+.settings/
+.project
+.mp3
+*.mp3
+**/node_modules/*
+*.swatch
+*.swatches
+

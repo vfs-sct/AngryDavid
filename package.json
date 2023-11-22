@@ -1,0 +1,31 @@
+{
+  "name": "angrypigs",
+  "version": "1.0.0",
+  "description": "Angry Pigs Game",
+  "main": "client.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack here",
+    "client": "cd game && live-server",
+    "editor": "cd editor && live-server",
+    "start": "nodemon --inspect ./server.js",
+    "server": "nodemon --inspect ./server.js",
+    "test": "nodemon --inspect ./serverTemplate.js"
+  },
+  "author": "Scott Henshaw",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "box2dweb": "^2.1.0-b",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "fs": "0.0.2",
+    "fs-extra": "^9.1.0",
+    "http": "0.0.0",
+    "jquery": "^3.5.1",
+    "nocache": "^2.1.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  }
+}

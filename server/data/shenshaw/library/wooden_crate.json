@@ -1,0 +1,10 @@
+{
+    "name":"Wooden Crate",
+    "height":"70",
+    "width":"140",
+    "texture":"images/wood_big.png",
+    "mass":"15",
+    "bounce":"0",
+    "friction":"1",
+    "hitPoints":"2"
+}

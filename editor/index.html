@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2018-2021 Scott Henshaw, All Rights Reserved -->
+<html>
+    <head>
+        <title>Angry Pigs Editor</title>
+
+        <link rel="stylesheet" href="../common/css/style-base.css"/>
+        <link rel="stylesheet" href="css/editor.css">
+
+        <script src="../common/libs/jquery-3.5.1.min.js"></script>
+    </head>
+    <body class="grid-wrapper">
+        <header class="grid-row-top grid-column-full">
+            <h2 class="center">Level Editor</h2>
+            <nav class="container">
+                <ul class="menu">
+                    <li class="menu-item">File</li>
+                    <li class="menu-item">Edit</li>
+                    <li class="menu-item">GameObject</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid-row-main grid-column-full">
+
+            <section id="editor-container" class="container">
+
+                <div class="item area">
+                    <div id="edit-window" class="editor">
+                        <!-- This area is generated programatically -->
+                    </div>
+                </div>
+
+            </section>
+            <section id="info-area" class="item container rows left">
+
+                <div id="level-info-area" class="item info-form-area">
+                    <form id="info-form" class="table bevel">
+                        <div class="field">
+                            <label for="level-list">Name:</label>
+                            <select id="level-list" name="level-name">
+                                <option value="level-1">Level 1</option>
+                                <!-- Add the other level names here as we go... -->
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="obstacles">Obstacles:</label>
+                            <input type="text" name="obstacles" value="10">
+                        </div>
+                        <div class="field">
+                            <label for="cannons">Cannons:</label>
+                            <input type="text" name="cannons" value="1">
+                        </div>
+                        <div class="field">
+                            <label for="shots">Max shots:</label>
+                            <input type="text" name="shots" value="15">
+                        </div>
+                        <div class="field">
+                            <label for="background">Background:</label>
+                            <input type="text" name="background" value="my-background">
+                        </div>
+                        <div class="field">
+                            <label for="score-star1">One Star Score:</label>
+                            <input type="text" name="score-star1" value="1000">
+                        </div>
+                        <div class="field">
+                            <label for="score-star2">Two Star Score:</label>
+                            <input type="text" name="score-star2" value="10000">
+                        </div>
+                        <div class="field">
+                            <label for="score-star3">Three Star Score:</label>
+                            <input type="text" name="score-star3" value="50000">
+                        </div>
+                        <div class="field">
+                            <div id="save-level">
+                                <button class="button-flat">Save Level</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="object-lib" class="item object-lib-area">
+                    <div class="item container bevel">
+                        <ul id="object-list" class="object-list">
+                            <!-- create list items in code -->
+                        </ul>
+                        <form id="object-form" class="table">
+                            <div class="field">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" value="" placeholder="Metal Crate">
+                            </div>
+                            <div class="field">
+                                <label for="height">Height:</label>
+                                <input type="text" name="height" value="" placeholder="70">
+                            </div>
+                            <div class="field">
+                                <label for="width">Width:</label>
+                                <input type="text" name="width" value="" placeholder="70">
+                            </div>
+                            <div class="field">
+                                <label for="Texture">Image Class:</label>
+                                <input type="text" name="texture" value="" placeholder="metal-center">
+                            </div>
+                            <div class="field">
+                                <label for="mass">Mass:</label>
+                                <input type="text" name="mass" value="" placeholder="90">
+                            </div>
+                            <div class="field">
+                                <label for="bounce">Bounciness:</label>
+                                <input type="text" name="bounce" value="" placeholder="0-1">
+                            </div>
+                            <div class="field">
+                                <label for="friction">Friction:</label>
+                                <input type="text" name="friction" value="" placeholder="0-1">
+                            </div>
+                            <div class="field">
+                                <label for="hit-points">Points:</label>
+                                <input type="text" name="hit-points" value="" placeholder="4">
+                            </div>
+                            <div class="field">
+                                <div class="container around">
+                                    <div id="cancel-prefab-edit">
+                                        <button class="button-flat">Cancel</button>
+                                    </div>
+                                    <div id="save-prefab-edit">
+                                        <button class="button-flat">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="item container bevel">
+                        <div id="new-prefab" class="">
+                            <button class="button-flat">New...</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div id="info-window" class="feedback" ></div>
+            <div id="status-window" class="feedback" ></div>
+        </main>
+
+        <div id="dialog-mask" class="modal-mask hide"></div>
+        <div id="dialog-container" class="dialog hide">
+            <!-- Dynamically build the content -->
+        </div>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "level": {
+        "id":          0,
+        "name":        "gun",
+        "projectiles": 15,
+        "cannon":      {"x": 75,"y": 92 },
+        "entities":    {
+            "collidables": [{
+                "id": 0,
+                "x": 471,
+                "y": 225,
+                "height": 70,
+                "width": 70,
+                "texture": "metal-box",
+                "bounce": 0,
+                "mass": 90,
+                "friction": 1,
+                "shape": "square"
+            },{
+                "id": 1,
+                "x": 289,
+                "y": 448,
+                "height": 200,
+                "width": 30,
+                "texture": "stone-box",
+                "bounce": 0,
+                "mass": 50,
+                "friction": 1,
+                "shape": "square"
+            }],
+            "targets": [{
+                "wx": 480,
+                "wy": 601,
+                "height": 200,
+                "width": 30,
+                "value": 150
+            },{
+                "wx": 483,
+                "wy": 172,
+                "height": 200,
+                "width": 30,
+                "value": 100
+            }]
+        }
+    }
+}
